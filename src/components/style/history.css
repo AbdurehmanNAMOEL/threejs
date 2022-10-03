@@ -1,0 +1,29 @@
+.history-container{
+    position: fixed;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.541);
+    margin-left: 75%;
+    margin-top: 10%;
+    border-radius: 40% 0% 40% 0%;
+    -webkit-border-radius: 40% 0% 40% 0%;
+    -moz-border-radius: 40% 0% 40% 0%;
+    -ms-border-radius: 40% 0% 40% 0%;
+    -o-border-radius: 40% 0% 40% 0%;
+    border: solid 3px rgb(21, 236, 104);
+}
+.box{
+    width: 80%;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 16, 16, 0.644);
+}
