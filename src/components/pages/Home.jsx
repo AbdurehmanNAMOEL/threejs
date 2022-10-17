@@ -9,7 +9,9 @@ const Home = () => {
      planetData.map(data=>
      <PlanetCanvas 
      title={data.title} 
-     image={data.image}/>
+     image={data.image}
+     audio={data.audio}
+     />
      )
     }
        

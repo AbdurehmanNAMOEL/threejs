@@ -11,6 +11,7 @@ import Mars from './components/pages/mars/MarsContainer';
 import JupiterContainer from './components/pages/jupiter/JupiterContainer';
 import SaturnContainer from './components/pages/saturn/SaturnContainer';
 import NeputneContainer from './components/pages/neputne/NeputneContainer';
+import earth from './audio/earth.ogg'
 function App() {
  
 
@@ -31,7 +32,7 @@ function App() {
       <Route exact path={'/neputne'} element={<NeputneContainer title={'Neputne'}/>}/>
     </Routes>
     </Router>
-   
+
    </div>
   );
 }
