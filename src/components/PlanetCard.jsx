@@ -18,7 +18,7 @@ const PlanetCard = ({image}) => {
 <perspectiveCamera/>
     <pointLight position={[1,0,4]} intensity={1} color={"#fff"}/>
     <motion.mesh ref={planetRef} initial={{x:-250}} animate={{x:0}} >
-      <sphereGeometry args={[2,24,24]}/>
+      <sphereGeometry args={[3,24,24]}/>
       <meshStandardMaterial map={planet}/>
       <OrbitControls minPolarAngle={0} maxPolarAngle={3.14}/>
     </motion.mesh>
