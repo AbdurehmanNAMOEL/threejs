@@ -12,6 +12,7 @@ import JupiterContainer from './components/pages/jupiter/JupiterContainer';
 import SaturnContainer from './components/pages/saturn/SaturnContainer';
 import NeputneContainer from './components/pages/neputne/NeputneContainer';
 import earth from './audio/earth.ogg'
+import UranusContainer from './components/pages/uranus/UranusContainer';
 function App() {
  
 
@@ -30,6 +31,7 @@ function App() {
       <Route exact path={'/jupiter'} element={<JupiterContainer title={'Jupiter'}/>}/>
       <Route exact path={'/saturn'} element={<SaturnContainer title={'Saturn'}/>}/>
       <Route exact path={'/neputne'} element={<NeputneContainer title={'Neputne'}/>}/>
+      <Route exact path={'/uranus'} element={<UranusContainer title={'uranus'}/>}/>
     </Routes>
     </Router>
 

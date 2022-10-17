@@ -7,7 +7,7 @@ import Neputne from '../../assets/neputne.jpg'
 import Saturn from '../../assets/saturn.jpg'
 import Venus from '../../assets/venus.jpg'
 import Jupiter from '../../assets/Jupiter.jpg'
-
+import Uranus from '../../assets/uranus.jpg'
 import EarthAudio from '../../audio/earth.ogg'
 import JupiterAudio from '../../audio/jupiter.ogg'
 import MarsAudio from '../../audio/mars.ogg'
@@ -21,14 +21,15 @@ import VenusAudio from '../../audio/venus.ogg'
 
 
 export const planetData=[
-    {'title':'earth' ,'image':Earth,'audio':EarthAudio},
-    {'title':'moon' ,'image':Moon,'audio':MoonAudio},
-    {'title':'sun' ,'image':Sun,'audio':SunAudio},
-    {'title':'mars' ,'image':Mars,'audio':MarsAudio},
-    {'title':'mercury' ,'image':Mercury,'audio':MercuryAudio},
-    {'title':'neputne' ,'image':Neputne,'audio':NeputenAudio},
-    {'title':'saturn' ,'image':Saturn,'audio':SaturnAudio},
-    {'title':'venus' ,'image':Venus,'audio':VenusAudio},
-    {'title':'jupiter' ,'image':Jupiter,'audio':VenusAudio},
+    {'title':'earth' ,'image':Earth,},
+    {'title':'moon' ,'image':Moon,},
+    {'title':'sun' ,'image':Sun,},
+    {'title':'mars' ,'image':Mars,},
+    {'title':'mercury' ,'image':Mercury,},
+    {'title':'neputne' ,'image':Neputne,},
+    {'title':'saturn' ,'image':Saturn,},
+    {'title':'venus' ,'image':Venus,},
+    {'title':'jupiter' ,'image':Jupiter,},
+    {'title':'Uranus' ,'image':Uranus,},
  
 ]
