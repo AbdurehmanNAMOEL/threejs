@@ -58,3 +58,9 @@ body
     }
 
 }
+
+@media only screen and (max-width:600px){
+#three-canvas-container{
+    margin-top: 100px;
+}
+}
