@@ -1,0 +1,34 @@
+.home{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    place-content: center;
+    gap: 50px;
+    background-color: #121212;
+}
+button{
+    position: fixed;
+    width: 200px;
+    height: 220px;
+    z-index: 100;
+    background-color: #12121209;
+    cursor: pointer;
+    margin-top: 140px;
+    border: none;
+    font-size: larger;
+    color: white;
+    display: flex;
+  
+}
+span{
+    width: 100%;
+    margin-top: 160px;
+ 
+}
+.canvas-container{
+    width: 200px;
+    height: 200px;
+    display: flex;
+}

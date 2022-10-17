@@ -2,6 +2,7 @@
     width: 80%;
     height: 70px;
     margin-left: 10%;
+    position: absolute;
     margin-top: 5px;
     background-color: #121212;
     z-index: 10;

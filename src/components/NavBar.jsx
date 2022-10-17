@@ -7,13 +7,14 @@ const NavBar = ({handleEarth,handleMoon,handleSun}) => {
   <>
     <nav className='navbar-container'>
         <div className="logo">
-            <img src={Logo} alt="" className='logo-image' />
+            {/* <img src={Logo} alt="" className='logo-image' /> */}
+            <h1>Logo</h1>
         </div>
         <div className='right-container'>
             <ul>
-                <li onClick={handleEarth}><Link to={'/'} className='link'>Earth</Link></li>
-                <li onClick={handleMoon}><Link to={'/moon'} className='link'>Moon</Link></li>
-                <li onClick={handleSun}><Link to={'/sun'} className='link'>Sun</Link></li>
+                <li onClick={handleEarth}><Link to={'/'} className='link'>Home</Link></li>
+                <li onClick={handleMoon}><Link to={'/'} className='link'>About</Link></li>
+                <li onClick={handleSun}><Link to={'/'} className='link'>Contact</Link></li>
             </ul>
         </div>
     </nav>
