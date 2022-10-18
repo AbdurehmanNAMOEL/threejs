@@ -1,6 +1,6 @@
 import MarsImage from '../../../assets/mars.jpg'
 import React from 'react'
-import MyCanvas from '../../threejsConvas/MyCanvas'
+import MyCanvas from '../../components/threejsConvas/MyCanvas'
 import '../../style/home.css'
 import marsAudio from '../../../audio/mars.ogg'
 const Mars = () => {

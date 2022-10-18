@@ -1,7 +1,7 @@
 import React from 'react'
-import MyCanvas from '../../threejsConvas/MyCanvas'
-import '../../style/home.css'
-import earth from '../../../assets/earth.jpg'
+import MyCanvas from '../../components/threejsConvas/MyCanvas'
+import '../../components/style/home.css'
+import earth from '../../assets/earth.jpg'
 const PlanetsHome = ({audio,texture}) => {
    
   return (

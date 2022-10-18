@@ -1,9 +1,9 @@
 import './index.css'
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
-import Home from './components/pages/Home';
+import Home from './pages/Home';
 import { useState } from 'react';
-import PlanetsHome from './components/pages/Planets/PlanetsHome';
+import PlanetsHome from './pages/Planets/PlanetsHome';
 function App() {
   const [audio,setAudio] = useState('')
   const [texture,setTexture]= useState('')

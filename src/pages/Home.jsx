@@ -1,7 +1,7 @@
 import React from 'react'
-import PlanetCanvas from '../PlanetCanvas'
-import '../style/home.css'
-import { planetData } from '../utils/planetData'
+import PlanetCanvas from '../components/PlanetCanvas'
+import '../components/style/home.css'
+import { planetData } from '../components/utils/planetData'
 const Home = ({setAudio,setTexture}) => {
   return (
     <div  className='home'>
