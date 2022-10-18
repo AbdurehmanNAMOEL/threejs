@@ -3,17 +3,16 @@ import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import PlanetCard from './PlanetCard';
 import { useNavigate } from 'react-router-dom';
-const PlanetCanvas = ({image,title,audio}) => {
-    const navigate=useNavigate()
-    const [isAudioOn,setAudio]=useState(false)
-    const handleClick=(e)=>{
-        console.log(e.target.name===title);
-        if(e.target.name===title){
-          setAudio(true)
-          navigate(`/${e.target.name}`)
-        }else setAudio(false)
-      
-    }
+const PlanetCanvas = ({image,title,audio,setAudio,setTexture}) => {
+    
+const navigate=useNavigate()
+const handleClick=(e)=>{
+  let planetName =e.target.name     
+  navigate(`/planet`)
+ setTexture(image)
+  setAudio(audio)
+  
+}
   return (
     <div className='canvas-container'>
     <Canvas 

@@ -6,7 +6,7 @@ const MyCanvas = ({image}) => {
   return (
    <Canvas   
      id="canvas-container" 
-      style={{width:"100%",height:"643px"}}>
+     style={{width:"500px",height:"500px"}}>
     <Suspense fallback={null}> 
     <MeshContainer image={image} />
     </Suspense>
