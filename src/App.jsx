@@ -1,18 +1,17 @@
 import './index.css'
 import NavBar from "./components/NavBar";
-import EarthContainer from "./components/pages/earth/EarthContainer";
-import MoonContainer from "./components/pages/moon/MoonContainer";
-import SunContainer from "./components/pages/sun/SunContainer";
+import Moon from "./components/pages/moon/Moon";
+import Sun from "./components/pages/sun/Sun";
 import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
 import Home from './components/pages/Home';
-import MercuryContainer from './components/pages/mercury/MercuryContainer';
-import VenusContainer from './components/pages/venus/VenusContainer';
-import Mars from './components/pages/mars/MarsContainer';
-import JupiterContainer from './components/pages/jupiter/JupiterContainer';
-import SaturnContainer from './components/pages/saturn/SaturnContainer';
-import NeputneContainer from './components/pages/neputne/NeputneContainer';
-import earth from './audio/earth.ogg'
-import UranusContainer from './components/pages/uranus/UranusContainer';
+import Mercury from './components/pages/mercury/Mercury';
+import Venus from './components/pages/venus/Venus';
+import Mars from './components/pages/mars/Mars';
+import Jupiter from './components/pages/jupiter/Jupiter';
+import SaturnContainer from './components/pages/saturn/Saturn';
+import Neputne from './components/pages/neputne/Neputne';
+import Uranus from './components/pages/uranus/Uranus';
+import Earth from './components/pages/earth/Earth';
 function App() {
  
 
@@ -22,16 +21,16 @@ function App() {
       <NavBar/>
       <Routes>
       <Route exact path={'/'} element={<Home/>}/>
-      <Route exact path={'/earth'} element={<EarthContainer title={'Earth'}/>}/>
-      <Route exact path={'/moon'} element={<MoonContainer title={'Moon'}/>}/>
-      <Route exact path={'/sun'} element={<SunContainer title={'The Sun'}/>}/>
-      <Route exact path={'/mercury'} element={<MercuryContainer title={'Mercury'}/>}/>
-      <Route exact path={'/venus'} element={<VenusContainer title={'Venus'}/>}/>
+      <Route exact path={'/earth'} element={<Earth title={'Earth'}/>}/>
+      <Route exact path={'/moon'} element={<Moon title={'Moon'}/>}/>
+      <Route exact path={'/sun'} element={<Sun title={'The Sun'}/>}/>
+      <Route exact path={'/mercury'} element={<Mercury title={'Mercury'}/>}/>
+      <Route exact path={'/venus'} element={<Venus title={'Venus'}/>}/>
       <Route exact path={'/mars'} element={<Mars title={'Mars'}/>}/>
-      <Route exact path={'/jupiter'} element={<JupiterContainer title={'Jupiter'}/>}/>
+      <Route exact path={'/jupiter'} element={<Jupiter title={'Jupiter'}/>}/>
       <Route exact path={'/saturn'} element={<SaturnContainer title={'Saturn'}/>}/>
-      <Route exact path={'/neputne'} element={<NeputneContainer title={'Neputne'}/>}/>
-      <Route exact path={'/uranus'} element={<UranusContainer title={'uranus'}/>}/>
+      <Route exact path={'/neputne'} element={<Neputne title={'Neputne'}/>}/>
+      <Route exact path={'/uranus'} element={<Uranus title={'uranus'}/>}/>
     </Routes>
     </Router>
 

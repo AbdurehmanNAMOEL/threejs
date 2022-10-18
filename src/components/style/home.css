@@ -22,6 +22,27 @@ button{
     display: flex;
   
 }
+ 
+button::before{
+    content: attr(name);
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    display: none;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: rgba(13, 13, 14, 0.884);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button:hover::before {
+    display: block;
+}
+
 span{
     width: 100%;
     margin-top: 160px;
@@ -40,6 +61,14 @@ audio{
     z-index: 300;
 }
 
+.earth-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (max-width:600px){
 .home{
     width: 100%;

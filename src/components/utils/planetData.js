@@ -21,15 +21,15 @@ import VenusAudio from '../../audio/venus.ogg'
 
 
 export const planetData=[
-    {'title':'earth' ,'image':Earth,},
-    {'title':'moon' ,'image':Moon,},
-    {'title':'sun' ,'image':Sun,},
-    {'title':'mars' ,'image':Mars,},
-    {'title':'mercury' ,'image':Mercury,},
-    {'title':'neputne' ,'image':Neputne,},
-    {'title':'saturn' ,'image':Saturn,},
-    {'title':'venus' ,'image':Venus,},
-    {'title':'jupiter' ,'image':Jupiter,},
-    {'title':'Uranus' ,'image':Uranus,},
+    {'id':"1",'title':'earth' ,'image':Earth,},
+    {'id':"2",'title':'moon' ,'image':Moon,},
+    {'id':"3",'title':'sun' ,'image':Sun,},
+    {'id':"4",'title':'mars' ,'image':Mars,},
+    {'id':"5",'title':'mercury' ,'image':Mercury,},
+    {'id':"6",'title':'neputne' ,'image':Neputne,},
+    {'id':"7",'title':'saturn' ,'image':Saturn,},
+    {'id':"8",'title':'venus' ,'image':Venus,},
+    {'id':"9",'title':'jupiter' ,'image':Jupiter,},
+    {'id':"10",'title':'Uranus' ,'image':Uranus,},
  
 ]

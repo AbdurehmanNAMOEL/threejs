@@ -20,8 +20,7 @@ body
   -ms-border-radius: 100%;
   -o-border-radius: 100%;
   margin-top: -20px;
-  animation: anime 2s linear 0.5s infinite;
-  -webkit-animation: anime 2s linear 0.5s infinite;
+  border: solid rgb(0, 217, 255) 2px;
 }
 
 

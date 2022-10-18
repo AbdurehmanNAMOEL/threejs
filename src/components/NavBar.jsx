@@ -8,7 +8,7 @@ const NavBar = ({handleEarth,handleMoon,handleSun}) => {
     <nav className='navbar-container'>
         <div className="logo">
             {/* <img src={Logo} alt="" className='logo-image' /> */}
-            <h1>Namoel</h1>
+            <h1><Link to={'/'} className='link'>Space</Link></h1>
         </div>
         <div className='right-container'>
             <ul>

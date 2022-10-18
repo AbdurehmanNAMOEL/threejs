@@ -26,11 +26,8 @@ const PlanetCanvas = ({image,title,audio}) => {
     </Suspense>
    </Canvas>
   <button 
-   name={title} 
+   name={title}
    onClick={handleClick}>
-   <span>
-   {title}
-    </span>
    </button>
    </div>
   )
