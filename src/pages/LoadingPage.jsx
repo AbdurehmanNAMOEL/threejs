@@ -8,7 +8,7 @@ const LoadingPage = ({setLoading}) => {
     const navigate = useNavigate()
     useEffect(()=>{
         if(width<300){
-            setWidth(count+=0.01)
+            setWidth(count+=1)
         }else{
             setLoading(false)
             navigate('/')
@@ -18,7 +18,7 @@ const LoadingPage = ({setLoading}) => {
  
   return (
     <div className='load-container'>
-        <h1>Ezana Space Exploration is Loading....</h1>
+        <h1>Ezana Space</h1>
         <div className="loading">
             <div style={{width:`${width}px`}} className="loading-anime"></div>
         </div>
