@@ -1,0 +1,42 @@
+.paper-container{
+    @apply md:w-[40%]
+    w-[95%]
+    mt-[50px]
+    md:mt-0
+    bg-[rgba(0,0,0,0.4)]
+    md:mr-[100px]
+    mr-[50px]
+    h-[500px]
+    ml-[30px]
+    shadow-md
+    rounded-sm
+    overflow-y-scroll
+}
+
+.name-of-body{
+    @apply ml-[10px]
+    h-[50px]
+    w-full
+    text-white
+    flex
+    font-bold
+}
+.subtitle{
+    @apply absolute
+    mt-[50px]
+    text-[20px]
+    mb-[30px]
+    font-[300]
+    text-[rgba(255,255,255,0.3)]
+    
+}
+.type{
+    color:white;
+}
+.detail-text{
+    @apply w-[95%]
+    text-[rgba(255,255,255,0.7)]
+     font-[200]
+     p-[10px]
+     mt-[30px]
+}

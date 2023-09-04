@@ -1,0 +1,10 @@
+.menu-container{
+    @apply h-[50px] 
+    w-[100%]
+    absolute
+    flex
+    shadow-md
+    md:hidden 
+    justify-between 
+    items-center
+}

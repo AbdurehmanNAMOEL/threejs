@@ -1,85 +1,144 @@
-.home{
-    width: 100%;
-    height: 150vh;
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px;
-    place-content: center;
-    gap: 50px;
-    background-color: #121212;
+.home {
+  @apply w-full
+    h-[96.5vh]
+    grid
+    grid-cols-5
+    gap-2
+    mt-[23px]
+    grid-flow-row
+    content-center
+    place-items-center
 }
-button{
-    position: absolute;
-    width: 200px;
-    height: 220px;
-    z-index: 100;
-    background-color: #12121209;
-    cursor: pointer;
-    margin-top: 30px;
-    border: none;
-    font-size: larger;
-    color: white;
-    display: flex;
-  
+button {
+  position: absolute;
+  width: 200px;
+  height: 220px;
+  z-index: 100;
+  background-color: #12121209;
+  cursor: pointer;
+  margin-top: 30px;
+  border: none;
+  font-size: larger;
+  color: white;
+  display: flex;
 }
- 
-button::before{
-    content: attr(name);
-    position: absolute;
-    width: 100px;
-    height: 30px;
-    display: none;
-    margin-left: 50px;
-    margin-top: 50px;
-    background-color: rgba(13, 13, 14, 0.884);
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+
+button::before {
+  content: attr(name);
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  display: none;
+  margin-left: 30px;
+  margin-top: 10px;
+  background-color: rgba(13, 13, 14, 0.884);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 button:hover::before {
-    display: block;
+  display: block;
 }
 
-span{
-    width: 100%;
-    margin-top: 160px;
- 
+span {
+  width: 100%;
+  margin-top: 160px;
 }
-.canvas-container{
-    width: 200px;
-    height: 200px;
-    display: flex;
+.canvas-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
 }
-audio{
-    width: 200px;
-    position: absolute;
-    height: 20px;
-    color: white;
-    z-index: 300;
+audio {
+  width: 200px;
+  position: absolute;
+  height: 20px;
+  color: white;
+  z-index: 300;
 }
 
-.earth-container,.planet-container{
-    width: 100%;
-    height: 100vh;
-    background-color: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.planet-component-container {
+  @apply md:w-[100%]
+  w-[80%]
+  flex
+  flex-col
+  justify-center
+  items-center;
 }
-@media only screen and (max-width:600px){
-.home{
+
+.earth-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.planet-container {
+  @apply md:w-[90%]
+  w-[90%]
+  md:h-[90vh]
+  bg-[#121212]
+  flex
+  flex-col-reverse
+  md:flex-row
+  justify-center
+  mt-[65px]
+  items-center
+}
+
+.play-planet-motion {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.play-button {
+  width: 24px;
+  height: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.plus-icon,
+.minus-icon {
+  width: 24px;
+  height: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.pause-button {
+  width: 24px;
+  height: 24px;
+  color: green;
+  cursor: pointer;
+}
+
+.play-button:hover,
+.pause-button:hover {
+  scale: 1.1;
+  transition: all 0.7s;
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
     width: 100%;
     height: auto;
     grid-template-columns: 200px;
     grid-template-rows: 200px 200px 200px 200px 200px 200px;
     place-content: center;
     gap: 50px;
-    
-}
-button{
+  }
+  button {
     margin-top: 150px;
-}
+  }
 }
