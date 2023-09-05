@@ -1,13 +1,17 @@
 import './index.css'
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router , Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import { useState } from 'react';
-import PlanetsHome from './pages/Planets/PlanetsHome';
+import { Suspense, useState,lazy } from 'react';
 import LoadingPage from './pages/LoadingPage';
 import Menu from './components/Menu';
-import SolarSystem from './pages/SolarSystem';
-function App() {
+
+import LoadingPageAnimation from './components/LoadingPageAnimation';
+import Home from './pages/Home'
+
+const PlanetsHome=lazy(()=>import('./pages/Planets/PlanetsHome'))
+const SolarSystem=lazy(()=>import('./pages/SolarSystem'))
+
+const App=()=> {
   const [audio,setAudio] = useState('')
   const [texture,setTexture]= useState('')
   const [menuClicked,setMenuClicked]= useState(false)
@@ -21,7 +25,6 @@ function App() {
   return (
     <div className='big-container'>
     <Router>
-      
       {menuClicked?
        <Home 
          setLoading={setMenuClicked} 
@@ -32,13 +35,16 @@ function App() {
       <NavBar setMenuClicked={setMenuClicked}/>
       <Menu/>
        {isPageLoading?<LoadingPage setLoading={setLoading}/>:''}   
-      <Routes>
-      <Route path='' element={<SolarSystem/>}/>
-      <Route 
-      exact path={'/planet'} 
-      element={<PlanetsHome data={data} audio={audio} texture={texture}/>}
+       <Suspense fallback={<LoadingPageAnimation/>}>
+       <Routes>
+        <Route path='' element={<SolarSystem/>}/>
+        <Route 
+         exact path={'/planet'} 
+         element={<PlanetsHome data={data} audio={audio} texture={texture}/>}
       />
+     
     </Routes>
+    </Suspense>
     </Router>
 
    </div>
