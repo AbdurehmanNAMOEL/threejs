@@ -6,9 +6,11 @@ import { useState } from 'react';
 import PlanetsHome from './pages/Planets/PlanetsHome';
 import LoadingPage from './pages/LoadingPage';
 import Menu from './components/Menu';
+import SolarSystem from './pages/SolarSystem';
 function App() {
   const [audio,setAudio] = useState('')
   const [texture,setTexture]= useState('')
+  const [menuClicked,setMenuClicked]= useState(false)
   const [isPageLoading,setLoading]= useState(true)
   const [data,setData]= useState({
     title:'',
@@ -19,15 +21,13 @@ function App() {
   return (
     <div className='big-container'>
     <Router>
-      <NavBar/>
+      
+      {menuClicked?<Home setData={setData} setAudio={setAudio} setTexture={setTexture}/>:''}
+      <NavBar setMenuClicked={setMenuClicked}/>
       <Menu/>
        {isPageLoading?<LoadingPage setLoading={setLoading}/>:''}   
       <Routes>
-      
-      <Route 
-       exact path={'/'} 
-       element={<Home setData={setData} setAudio={setAudio} setTexture={setTexture}/>}
-      />
+      <Route path='' element={<SolarSystem/>}/>
       <Route 
       exact path={'/planet'} 
       element={<PlanetsHome data={data} audio={audio} texture={texture}/>}

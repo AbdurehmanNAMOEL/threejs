@@ -198,3 +198,97 @@ export const planetData=[
   },
  
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+export const planetSizeData=[
+  {
+    'id':"1",
+    'title':'Mercury', 
+    'xRadius':4,
+    'zRadius':4,
+    'size':1,
+    'image':Mercury,
+   
+  },
+
+  {
+    'id':"2",
+    'title':'Venus', 
+    'xRadius':7,
+    'zRadius':7,
+    'size':1,
+    'image':Venus,
+   
+  },
+
+  {
+    'id':"3",
+    'title':'Earth', 
+    'xRadius':10,
+    'size':1.2,
+    'zRadius':10,
+    'image':Earth,
+   
+  },
+  {
+    'id':"4",
+    'title':'Mars', 
+    'xRadius':14,
+    'size':1.4,
+    'zRadius':14,
+    'image':Mars,
+   
+  },
+
+   {
+    'id':"4",
+    'title':'Jupiter', 
+    'xRadius':20,
+    'size':2,
+    'zRadius':20,
+    'image':Jupiter,
+   
+  },
+
+  {
+    'id':"4",
+    'title':'Saturn', 
+    'xRadius':26,
+    'size':1.7,
+    'zRadius':26,
+    'image':Saturn,
+  },
+  
+   {
+    'id':"5",
+    'title':'Uranus', 
+    'xRadius':30,
+    'size':1.6,
+    'zRadius':30,
+    'image':Uranus,
+  },
+   
+   {
+    'id':"6",
+    'title':'Neptune', 
+    'xRadius':35,
+    'size':1.6,
+    'zRadius':35,
+    'image':Neputne,
+  },
+]
+
+
+
+

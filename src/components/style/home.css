@@ -4,6 +4,7 @@
     grid
     grid-cols-5
     gap-2
+    z-[3000]
     mt-[23px]
     grid-flow-row
     content-center

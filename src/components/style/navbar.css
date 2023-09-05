@@ -2,6 +2,7 @@
     @apply w-full
     h-[70px]
     absolute
+    z-[6000]
     hidden
     md:flex
     justify-between

@@ -4,7 +4,7 @@ import '../components/style/home.css'
 import { planetData } from '../components/utils/planetData'
 const Home = ({setAudio,setTexture,setData}) => {
   return (
-    <div  className='home'>
+    <div  className='home absolute w-full h-[70vh] bg-[#121212]'>
     {
      planetData.map(data=>
      <PlanetCanvas 

@@ -1,8 +1,8 @@
 import React from 'react'
 import '../components/style/navbar.css'
 import {Link} from 'react-router-dom'
-import { FaTelegram,FaLinkedin,FaGithub } from 'react-icons/fa'
-const NavBar = ({handleEarth,handleMoon,handleSun}) => {
+import { FaTelegram,FaLinkedin,FaGithub,FaBars } from 'react-icons/fa'
+const NavBar = ({handleEarth,handleMoon,handleSun,setMenuClicked}) => {
   return (
   <>
     <nav className='navbar-container hidden md:flex'>
@@ -12,6 +12,7 @@ const NavBar = ({handleEarth,handleMoon,handleSun}) => {
         </div>
         <div className='right-container'>
             <ul>
+                <FaBars onClick={()=>setMenuClicked(prev=>!prev)}/>
                 <li onClick={handleEarth}><Link to={'/'} className='link'>Home</Link></li>
                 {/* <li onClick={handleMoon}><Link to={'/'} className='link'>About</Link></li> */}
                 <li className='flex gap-4' onClick={handleSun}>Contact |
