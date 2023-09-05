@@ -5,9 +5,9 @@ import { Suspense, useState,lazy } from 'react';
 import LoadingPage from './pages/LoadingPage';
 import Menu from './components/Menu';
 
-import LoadingPageAnimation from './components/LoadingPageAnimation';
 import Home from './pages/Home'
 import LoadingAnimation from './components/LoadingAnimation';
+import LoadingPageAnimation from './components/LoadingPageAnimation';
 
 const PlanetsHome=lazy(()=>import('./pages/Planets/PlanetsHome'))
 const SolarSystem=lazy(()=>import('./pages/SolarSystem'))
@@ -24,8 +24,9 @@ const App=()=> {
   })
 
   return (
-    <div className='big-container'>
+    <div className='big-container w-full h-full'>
     <Router>
+      
       {menuClicked?
        <Home 
          setLoading={setMenuClicked} 
@@ -36,7 +37,7 @@ const App=()=> {
       <NavBar setMenuClicked={setMenuClicked}/>
       <Menu/>
        {isPageLoading?<LoadingPage setLoading={setLoading}/>:''}   
-       <Suspense fallback={<LoadingAnimation/>}>
+       <Suspense fallback={<LoadingPageAnimation/>}>
        <Routes>
         <Route path='' element={<SolarSystem/>}/>
         <Route 
