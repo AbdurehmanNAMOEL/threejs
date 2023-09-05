@@ -1,9 +1,14 @@
 import React from 'react'
 import './style/loading_animation.css'
+import spaceLogo from '../assets/space_exploration.jpg'
 const LoadingAnimation = () => {
   return (
    <div class="container">
-  <svg width="100" height="100" viewBox="0 0 300 300">
+     <img
+       className='w-[80px] h-[80px] rounded-full shadow-md' 
+       src={spaceLogo} 
+       alt='logo'/>
+    <svg width="100" height="100" viewBox="0 0 300 300">
     <defs>
       <linearGradient id="gradient-fill" gradientUnits="userSpaceOnUse" x1="0" y1="300" x2="300" y2="0">
         <stop offset="0%">

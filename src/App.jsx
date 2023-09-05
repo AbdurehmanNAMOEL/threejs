@@ -7,6 +7,7 @@ import Menu from './components/Menu';
 
 import LoadingPageAnimation from './components/LoadingPageAnimation';
 import Home from './pages/Home'
+import LoadingAnimation from './components/LoadingAnimation';
 
 const PlanetsHome=lazy(()=>import('./pages/Planets/PlanetsHome'))
 const SolarSystem=lazy(()=>import('./pages/SolarSystem'))
@@ -35,7 +36,7 @@ const App=()=> {
       <NavBar setMenuClicked={setMenuClicked}/>
       <Menu/>
        {isPageLoading?<LoadingPage setLoading={setLoading}/>:''}   
-       <Suspense fallback={<LoadingPageAnimation/>}>
+       <Suspense fallback={<LoadingAnimation/>}>
        <Routes>
         <Route path='' element={<SolarSystem/>}/>
         <Route 
