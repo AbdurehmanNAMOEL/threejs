@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom'
 import './styles/load.css'
 let count =10
 const LoadingPage = ({setLoading}) => {
-
     const [width,setWidth]=useState(10)
     const navigate = useNavigate()
+    
     useEffect(()=>{
         if(width<300){
             setWidth(count+=1)
