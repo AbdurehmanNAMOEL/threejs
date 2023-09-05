@@ -22,7 +22,13 @@ function App() {
     <div className='big-container'>
     <Router>
       
-      {menuClicked?<Home setData={setData} setAudio={setAudio} setTexture={setTexture}/>:''}
+      {menuClicked?
+       <Home 
+         setLoading={setMenuClicked} 
+         setData={setData} 
+         setAudio={setAudio} 
+         setTexture={setTexture}
+         />:''}
       <NavBar setMenuClicked={setMenuClicked}/>
       <Menu/>
        {isPageLoading?<LoadingPage setLoading={setLoading}/>:''}   

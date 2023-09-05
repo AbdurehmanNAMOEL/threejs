@@ -2,6 +2,7 @@ import React from 'react'
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import MeshContainer from './MeshContainer';
+import { Stars } from '@react-three/drei';
 const MyCanvas = ({image,isPlanetRotating,planetRadius}) => {
   return (
    <Canvas  
@@ -9,6 +10,7 @@ const MyCanvas = ({image,isPlanetRotating,planetRadius}) => {
      id="canvas-container" 
      style={{width:"500px",height:"500px"}}>
     <Suspense fallback={null}> 
+    <Stars/>
     <MeshContainer 
       image={image} 
       isPlanetRotating={isPlanetRotating}
