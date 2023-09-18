@@ -8,10 +8,11 @@ import Menu from './components/Menu';
 import Home from './pages/Home'
 import LoadingAnimation from './components/LoadingAnimation';
 import LoadingPageAnimation from './components/LoadingPageAnimation';
+import { useEffect } from 'react';
 
 const PlanetsHome=lazy(()=>import('./pages/Planets/PlanetsHome'))
 const SolarSystem=lazy(()=>import('./pages/SolarSystem'))
-
+const tel=window.Telegram.WebApp
 const App=()=> {
   const [audio,setAudio] = useState('')
   const [texture,setTexture]= useState('')
@@ -23,6 +24,9 @@ const App=()=> {
     about:''
   })
 
+  useEffect(()=>{
+     tel.ready()
+  },[])
   return (
     <div className='big-container w-full h-full'>
     <Router>
